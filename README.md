@@ -17,8 +17,8 @@ This project showcases modern frontend development using **Vite**, **Tailwind CS
 |-------------|-------------------------------|-----------|
 | 🔐 Login     | Basic login UI                | [Login Page](https://nextgennerdslogin.netlify.app/) |
 | 🏠 Home      | Animated landing page         | [Home Page](https://nextgennerds.netlify.app/) |
-| 📋 Job Form  | Job application form UI       | [Form Page](https://nextgennerdsform.netlify.app/) |
 | 📚 Courses   | Static course display page    | [Course Page](https://netgetnerdsgsap.netlify.app/) |
+| 📋 Job Form  | Job application form UI       | [Form Page](https://nextgennerdsform.netlify.app/) |
 
 ---
 
