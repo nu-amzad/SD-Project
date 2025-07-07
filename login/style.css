@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.container:hover {
+    transform: scale(1.05);
+}
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px #6b48ff);
+}
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: background 0.3s ease;
+}
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: #6b48ff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+    background: #5a3ce6;
+    transform: translateY(-2px);
+}
+#toggleForm {
+    margin-top: 15px;
+    color: #6b48ff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.error {
+    color: #ff4d4d;
+    font-size: 0.9em;
+    display: none;
+    margin-top: 5px;
+}

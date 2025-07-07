@@ -1,0 +1,141 @@
+body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+}
+nav {
+    background-color: #053a0fd0;
+    padding: 5px;
+    color: white;
+}
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.course-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.course-image {
+    flex: 1 1 50%;
+    min-width: 300px;
+}
+.course-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.course-details {
+    flex: 1 1 50%;
+    min-width: 300px;
+}
+.course-details h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.course-details p {
+    color: #444;
+    margin-bottom: 20px;
+}
+.progress-section {
+    margin-bottom: 20px;
+}
+.progress-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.progress-bar-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+}
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #1e90ff;
+    transition: width 0.3s ease-in-out;
+}
+.progress-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+.collapse-section {
+    margin-bottom: 10px;
+}
+.collapse-button {
+    width: 100%;
+    background-color: #1e90ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.collapse-button:hover {
+    background-color: #187bcd;
+}
+.collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: white;
+    padding: 0 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.collapse-content.active {
+    max-height: 500px; /* Adjust based on content */
+    padding: 15px;
+}
+.complete-btn {
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.complete-btn:hover {
+    background-color: #218838;
+}
+.complete-btn:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+@media (max-width: 768px) {
+    .course-content {
+    flex-direction: column;
+    }
+}

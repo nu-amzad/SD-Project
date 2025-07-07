@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+  --primary: rgba(188, 108, 37, 1);
+  --secondary: rgba(96, 108, 56, 1);
+  --third: rgba(96, 108, 56, 1);
+  --forth: rgba(254, 250, 224, 1);
+  --fifth: rgba(221, 161, 94, 1);
+  --gradient-start: rgba(175, 191, 160, 1);
+  --gradient-end: rgba(254, 250, 224, 1);
+}
+
+body {
+  background: linear-gradient(to bottom, rgba(175, 191, 160, 1) 0%, rgba(254, 250, 224, 1) 100%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  background-color: #f7f7f7;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  max-width: 100%;
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.job-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid #e0e0e0;
+}
+
+.job-card:last-child {
+  margin-bottom: 0;
+}
+
+.apply-button {
+  background-color: #fca311;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  align-self: flex-end;
+}
+
+.apply-button:hover {
+  background-color: #e89300;
+}
+
+.see-all-button {
+  background-color: #6b8e23;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+  align-self: center;
+}
+
+.see-all-button:hover {
+  background-color: #5a7a1f;
+}
+
+@media (min-width: 640px) {
+  .job-card {
+    flex-direction: row;
+    align-items: center;
+  }
+  .job-details {
+    flex-grow: 1;
+  }
+  .apply-button {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
+
+.footer-border {
+  border: 4px solid #1e40af;
+}
+
+.custom-bg {
+  background: linear-gradient(135deg, #1e293b 0%, #2d3748 100%);
+}
+
+.glow-button {
+  transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 15px rgba(252, 211, 77, 0.7);
+  transform: scale(1.05);
+}
+
+.social-icon:hover {
+  transform: rotate(15deg) scale(1.2);
+  color: #f59e0b;
+}

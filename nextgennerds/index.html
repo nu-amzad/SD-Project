@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGenNerds</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+<nav class=" text-white px-4 py-2 flex items-center justify-between relative">
+    <img src="public/logo.png" alt="NextGenNerds Logo" class="h-16 z-20" />
+    <div class="hidden md:flex items-center space-x-4">
+      <ul class="flex space-x-4">
+        <a href="#courses">
+          <li class="hover:text-gray-200 cursor-pointer font-semibold">Course</li>
+        </a>
+        <a href="#jobs">
+          <li class="hover:text-gray-200 cursor-pointer font-semibold">Job</li>
+        </a>
+        <a href="#about">
+          <li class="hover:text-gray-200 cursor-pointer font-semibold">About Us</li>
+        </a>
+      </ul>
+      <button type="button" class="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-md" onclick="window.location.href='https://nextgennerdslogin.netlify.app/'">Log In</button>
+      <button type="button" class="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-md">Sign Up</button>
+    </div>
+    <div id="menu-toggle-container" class="md:hidden z-20">
+      <button id="menu-toggle" type="button" aria-label="Open mobile menu">
+        <img src="public/hamburgermenu.png" alt="Menu Icon" class="h-6 w-6" />
+      </button>
+    </div>
+    <div id="mobile-menu" class="fixed inset-y-0 right-0 w-64 bg-green-600 transform translate-x-full transition-transform duration-300 ease-in-out z-100 md:hidden">
+      <div class="flex justify-end p-4">
+        <button id="menu-close" type="button" aria-label="Close mobile menu">
+          <img src="public/close.png" alt="Close Menu Icon" class="h-6 w-6" />
+        </button>
+      </div>
+      <ul class="flex flex-col space-y-4 px-6 text-lg text-white">
+        <a href="#courses">
+          <li class="hover:text-gray-200 cursor-pointer">Course</li>
+        </a>
+        <a href="#jobs">
+          <li class="hover:text-gray-200 cursor-pointer">Job</li>
+        </a>
+        <a href="#guide">
+          <li class="hover:text-gray-200 cursor-pointer">Guide</li>
+        </a>
+        <li><button type="button" class="w-full bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-md" onclick="window.location.href='https://nextgennerdslogin.netlify.app/'">Log In</button></li>
+        <li><button type="button" class="w-full bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-md">Sign In</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- header section -->
+<section class="relative rounded-3xl overflow-hidden bg-gray-900 text-white h-[500px]">
+    <img src="public/header-image.jpg" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover opacity-40" />
+    <div class="relative z-10 h-full flex items-center">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="mb-6 max-w-md">
+          <label for="search-input" class="sr-only">Search Topic</label>
+          <div class="flex items-center bg-white rounded-full px-4 py-2 shadow-md">
+            <input id="search-input" type="text" placeholder="Topic..." class="flex-grow outline-none text-gray-800 placeholder-gray-500 bg-transparent" />
+            <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1010.5 18.5a7.5 7.5 0 006.15-3.85z" />
+            </svg>
+          </div>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-snug">
+          Welcome To A <br />
+          World Built For <br />
+          <span class="text-orange-400">Programmers</span>
+        </h1>
+        <p class="mt-4 text-sm text-gray-200">JOIN · LEARN · GROW · LEAD</p>
+      </div>
+    </div>
+  </section>
+
+<!-- course section -->
+  <section id="courses" class="py-12 px-4">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="bg-blue-900 text-3xl font-bold mb-8 inline-block px-6 py-2 bg-fifth text-white rounded-md shadow">COURSES</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+          <img src="public/gsap.jpg" alt="GSAP Course" class="h-40 w-full object-cover" />
+          <div class="p-4 flex flex-col justify-between flex-1">
+            <h3 class="font-semibold text-lg mb-2">“Animate anything with GSAP | Complete GSAP Course”</h3>
+            <p class="text-sm text-gray-700">Videos: 13</p>
+            <p class="text-sm text-gray-700">Total Duration: 1 hour, 7 minutes, 52 seconds</p>
+            <p class="text-sm text-gray-700">Course By: Sarthak Sharma</p>
+            <p class="text-sm text-gray-700 mb-4">Type: Free</p>
+            <button type="button" class="bg-orange-400 hover:bg-orange-500 text-white py-2 px-4 rounded-md w-full" onclick="window.location.href='https://netgetnerdsgsap.netlify.app/'">WATCH</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+          <img src="public/githubcourse.jpg" alt="Git Course" class="h-40 w-full object-cover" />
+          <div class="p-4 flex flex-col justify-between flex-1">
+            <h3 class="font-semibold text-lg mb-2">“Learn Git - Full Course for Beginners”</h3>
+            <p class="text-sm text-gray-700">Videos: 1</p>
+            <p class="text-sm text-gray-700">Total Duration: 3 hours 43 minutes</p>
+            <p class="text-sm text-gray-700">Course By: Hitesh Choudhary</p>
+            <p class="text-sm text-gray-700 mb-4">Type: Free</p>
+            <button type="button" class="bg-orange-400 hover:bg-orange-500 text-white py-2 px-4 rounded-md w-full" onclick="window.location.href='https://netgetnerdsgsap.netlify.app/'">WATCH</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+          <img src="public/js.jpg" alt="JavaScript Course" class="h-40 w-full object-cover" />
+          <div class="p-4 flex flex-col justify-between flex-1">
+            <h3 class="font-semibold text-lg mb-2">“Ultimate Javascript Tutorials”</h3>
+            <p class="text-sm text-gray-700">Videos: 32</p>
+            <p class="text-sm text-gray-700">Total Duration: 7 hours, 13 minutes, 53 seconds</p>
+            <p class="text-sm text-gray-700">Course By: Giyush Garg</p>
+            <p class="text-sm text-gray-700 mb-4">Type: Free</p>
+            <button type="button" class="bg-orange-400 hover:bg-orange-500 text-white py-2 px-4 rounded-md w-full" onclick="window.location.href='https://netgetnerdsgsap.netlify.app/'">WATCH</button>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8">
+        <button type="button" class="bg-blue-300 hover:bg-blue-400 text-white text-lg font-semibold px-6 py-3 rounded-full shadow-md transition">Click For More...</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- job offer section -->
+  <section id="jobs" class="py-12 px-4">
+    <div class="container">
+      <div class="flex justify-center mb-6">
+        <h2 class="bg-gray-700 text-white px-6 py-2 rounded-full text-lg font-semibold shadow-md">Job Opportunities</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="job-card">
+          <div class="job-details">
+            <h3 class="text-lg font-semibold text-gray-800 mb-1">XYZ Expo.</h3>
+            <p class="text-sm text-gray-700 mb-0.5"><span class="font-medium">Position:</span> Front-End Junior Engineer.</p>
+            <p class="text-sm text-gray-700 mb-0.5"><span class="font-medium">Expertise:</span> HTML, CSS, JavaScript, React, Vue.js, Tailwind CSS, Responsive Design, Git</p>
+            <p class="text-sm text-gray-700"><span class="font-medium">Experience:</span> 2 Years minimum</p>
+          </div>
+          <button type="button" class="apply-button" onclick="window.location.href='https://nextgennerdsform.netlify.app/'">Apply</button>
+        </div>
+        <div class="job-card">
+          <div class="job-details">
+            <h3 class="text-lg font-semibold text-gray-800 mb-1">Lorem International</h3>
+            <p class="text-sm text-gray-700 mb-0.5"><span class="font-medium">Position:</span> ML Engineer.</p>
+            <p class="text-sm text-gray-700 mb-0.5"><span class="font-medium">Expertise:</span> Python, TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas, Model Deployment, Jupyter</p>
+            <p class="text-sm text-gray-700"><span class="font-medium">Experience:</span> 1 Years minimum</p>
+          </div>
+          <button type="button" class="apply-button" onclick="window.location.href='https://nextgennerdsform.netlify.app/'">Apply</button>
+        </div>
+        <div class="job-card">
+          <div class="job-details">
+            <h3 class="text-lg font-semibold text-gray-800 mb-1">Galaxy Research Society</h3>
+            <p class="text-sm text-gray-700 mb-0.5"><span class="font-medium">Position:</span> DevOps Engineer</p>
+            <p class="text-sm text-gray-700 mb-0.5"><span class="font-medium">Expertise:</span> AWS, Docker, Kubernetes, CI/CD (GitHub Actions, Jenkins), Terraform, Linux, Nginx, Monitoring (Prometheus, Grafana)</p>
+            <p class="text-sm text-gray-700"><span class="font-medium">Experience:</span> 6 months</p>
+          </div>
+          <button type="button" class="apply-button" onclick="window.location.href='https://nextgennerdsform.netlify.app/'">Apply</button>
+        </div>
+        <div class="job-card">
+          <div class="job-details">
+            <h3 class="text-lg font-semibold text-gray-800 mb-1">KrashLight Inc.</h3>
+            <p class="text-sm text-gray-700 mb-0.5"><span class="font-medium">Position:</span> Mobile App Developer</p>
+            <p class="text-sm text-gray-700 mb-0.5"><span class="font-medium">Expertise:</span> Flutter, Dart, React Native, Android Studio, Swift (iOS), REST APIs, Firebase, UI/UX Principles</p>
+            <p class="text-sm text-gray-700"><span class="font-medium">Experience:</span> 1 Years minimum</p>
+          </div>
+          <button type="button" class="apply-button" onclick="window.location.href='https://nextgennerdsform.netlify.app/'">Apply</button>
+        </div>
+      </div>
+      <div class="flex justify-end mt-6">
+        <button type="button" class="see-all-button">See All...</button>
+      </div>
+    </div>
+  </section>
+<!-- about section -->
+    <section id="about" class="min-h-screen flex items-center justify-center py-16">
+        <div class="containerabout bg-neutral-600 mx-auto px-4 flex flex-col md:flex-row items-center gap-12 ">
+            <div class="md:w-1/2 about-image">
+                <img src="public/aboutsection.jpg" alt="About Image" class="rounded-lg shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="md:w-1/2 text-amber-500 about-text ">
+                <h2 class="text-4xl mt-15 md:text-5xl font-bold mb-6">ABOUT US</h2>
+                <p class="text-lg md:text-xl mb-4 text-amber-50">We are a passionate team dedicated to creating innovative solutions that empower businesses and individuals. Our mission is to push the boundaries of technology and design, delivering exceptional experiences that inspire and connect.</p>
+                <p class="text-lg md:text-xl mb-6 text-amber-50">With years of expertise and a commitment to excellence, we strive to make a positive impact through creativity, collaboration, and cutting-edge innovation.</p>
+            </div>
+        </div>
+    </section>
+<!--footer section-->
+
+  <footer class="custom-bg text-white p-4 md:p-8 footer-border">
+    <div class="containerf mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+      <div class="text-center md:text-left">
+        <h2 class="text-2xl md:text-3xl font-bold text-teal-400">NextGenNerds</h2>
+        <p class="text-sm md:text-base mt-2">nextgennerds@gmail.com</p>
+        <p class="text-xs md:text-sm mt-1">© 2025 CodeNerds - All rights reserved</p>
+        <div class="flex justify-center md:justify-start space-x-4 mt-4">
+          <a href="#" class="social-icon text-2xl text-blue-400 hover:text-yellow-400 transition-transform duration-300"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon text-2xl text-blue-400 hover:text-yellow-400 transition-transform duration-300"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon text-2xl text-blue-400 hover:text-yellow-400 transition-transform duration-300"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon text-2xl text-blue-400 hover:text-yellow-400 transition-transform duration-300"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="text-center">
+        <h3 class="text-lg md:text-xl font-semibold text-yellow-400 mb-3">Subscribe To Our Newsletter</h3>
+        <div class="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-3">
+          <input type="email" placeholder="Enter Your Mail" class="bg-gray-600 p-3 rounded-lg text-black w-full md:w-64 focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+          <button type="button" class="glow-button bg-yellow-500 text-white p-3 rounded-lg w-full md:w-auto hover:bg-yellow-600 transition-all duration-300">➤</button>
+        </div>
+      </div>
+      <div class="text-center md:text-right">
+        <h3 class="text-lg md:text-xl font-semibold text-yellow-400 mb-3">Campaigns</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-yellow-400 transition-colors duration-300">FAQ</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition-colors duration-300">Contribution</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition-colors duration-300">Donation</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition-colors duration-300">Dev Team</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="src/script.js"></script>
+</body>
+</html>

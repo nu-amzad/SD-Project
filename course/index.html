@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="#" style="font-size: 24px; font-weight: bold"
+          >Course Platform</a
+        >
+        <div>
+          <a href="https://nextgennerds.netlify.app/">Home</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container course-content">
+      <div class="course-image">
+        <img src="gsap.jpg" alt="Course Image" />
+      </div>
+
+      <div class="course-details">
+        <h1>“Animate anything with GSAP | Complete GSAP Course”</h1>
+        <p>
+          Learn the fundamentals of GSAP. This course will take you from a
+          begainner to a professional
+        </p>
+
+        <div class="progress-section">
+          <h3>Course Progress</h3>
+          <div class="progress-bar-container">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+          <p class="progress-text">
+            Progress: <span id="progressText">0%</span>
+          </p>
+        </div>
+
+        <!-- Video Sections -->
+        <div>
+          <div class="collapse-section" data-module-id="module1">
+            <button class="collapse-button" onclick="toggleCollapse(this)">
+              <span
+                >Module 1: Master GSAP Animations: Basics | Complete GSAP Course
+                - Part 1</span
+              >
+              <span>▼</span>
+            </button>
+            <div class="collapse-content">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/9C03V1dXxOU?si=coyJKgsDlyDK1TIA"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <button
+                class="complete-btn"
+                onclick="markAsCompleted(this, 'module1')"
+              >
+                Mark as Completed
+              </button>
+            </div>
+          </div>
+          <div class="collapse-section" data-module-id="module2">
+            <button class="collapse-button" onclick="toggleCollapse(this)">
+              <span>Module 2: Master ScrollTrigger with GSAP | Complete GSAP Course - Part 2</span>
+              <span>▼</span>
+            </button>
+            <div class="collapse-content">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/aezzM70lWDo?si=gQDzT2-AWJA28b-W"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <button class="complete-btn" onclick="markAsCompleted(this, 'module2')">
+                Mark as Completed
+              </button>
+            </div>
+          </div>
+          <div class="collapse-section" data-module-id="module3">
+            <button class="collapse-button" onclick="toggleCollapse(this)">
+              <span>Module 3: Create Stunning SVG Animations with GSAP | Complete GSAP Course - Part 3</span>
+              <span>▼</span>
+            </button>
+            <div class="collapse-content">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/asdNfZfHT34?si=OVwMwim7A9ODUCdH"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <button
+                class="complete-btn"
+                onclick="markAsCompleted(this, 'module3')"
+              >
+                Mark as Completed
+              </button>
+            </div>
+          </div>
+          <div class="collapse-section" data-module-id="module2">
+            <button class="collapse-button" onclick="toggleCollapse(this)">
+              <span>Module 4: Build a Custom Cursor Animation with GSAP | Complete GSAP Course - Project 1</span>
+              <span>▼</span>
+            </button>
+            <div class="collapse-content">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/Ziv1G994SrM?si=Cinl5ggWZ4MjG5I6"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <button class="complete-btn" onclick="markAsCompleted(this, 'module2')">
+                Mark as Completed
+              </button>
+            </div>
+          </div>
+          <div class="collapse-section" data-module-id="module2">
+            <button class="collapse-button" onclick="toggleCollapse(this)">
+              <span>Module 5: Create Timeline Animation with GSAP | Complete GSAP Course - Project 2</span>
+              <span>▼</span>
+            </button>
+            <div class="collapse-content">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/dm3QmM9c4xU?si=ABif32w0FUa9-rjT"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <button class="complete-btn" onclick="markAsCompleted(this, 'module2')">
+                Mark as Completed
+              </button>
+            </div>
+          </div>
+          <div class="collapse-section" data-module-id="module2">
+            <button class="collapse-button" onclick="toggleCollapse(this)">
+              <span>Module 6: Create Stunning Text Animations with GSAP | Complete GSAP Course - Project 3</span>
+              <span>▼</span>
+            </button>
+            <div class="collapse-content">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/0tNwWuKRjnk?si=X1ChJQgGOUrnDSOn"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <button class="complete-btn" onclick="markAsCompleted(this, 'module2')">
+                Mark as Completed
+              </button>
+            </div>
+          </div>
+          <div class="collapse-section" data-module-id="module2">
+            <button class="collapse-button" onclick="toggleCollapse(this)">
+              <span>Module 7: Create Scrolling Text Animations with GSAP | Complete GSAP Course - Project 4</span>
+              <span>▼</span>
+            </button>
+            <div class="collapse-content">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/tvNKFWkWpho?si=B305PuRCBxYjqMQS"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <button class="complete-btn" onclick="markAsCompleted(this, 'module2')">
+                Mark as Completed
+              </button>
+            </div>
+          </div>
+          <div class="collapse-section" data-module-id="module2">
+            <button class="collapse-button" onclick="toggleCollapse(this)">
+              <span>Module 8: Build an Animated Website with GSAP | Complete GSAP Course - Project 5</span>
+              <span>▼</span>
+            </button>
+            <div class="collapse-content">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/Zd8a_yC-_xQ?si=5N8i0QFs5XkfDEci"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <button class="complete-btn" onclick="markAsCompleted(this, 'module2')">
+                Mark as Completed
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
